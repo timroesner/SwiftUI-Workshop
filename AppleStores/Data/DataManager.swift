@@ -6,13 +6,26 @@
 //
 
 import Foundation
+import Combine
 import CoreLocation
 
 class DataManager: ObservableObject {
+    @Published
     private(set) var appleStores = [AppleStore]()
     
-    init() {
-        appleStores.append(Self.testStore)
+    private var token: Cancellable?
+    
+    func load() {
+        token?.cancel()
+        
+        token = DataLoader.loadAppleStores()
+            .sink { completion in
+                if case .failure(let error) = completion {
+                    print(error.localizedDescription)
+                }
+            } receiveValue: { [weak self] result in
+                self?.appleStores = result
+            }
     }
     
     static let testStore = AppleStore(

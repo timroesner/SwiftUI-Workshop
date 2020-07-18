@@ -18,6 +18,8 @@ struct ListView: View {
                 })
             }
             .navigationTitle("Stores")
+        }.onAppear {
+            dataManager.load()
         }
     }
 }
