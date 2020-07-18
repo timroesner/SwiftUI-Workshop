@@ -10,7 +10,7 @@ import CoreLocation
 
 struct AppleStore {
     let name: String
-    let website: URL?
+    let website: URL
     let phone: String
     let location: CLLocation
     let hours: [Hour]
