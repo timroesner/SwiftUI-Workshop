@@ -17,7 +17,7 @@ class DataManager: ObservableObject {
     
     static let testStore = AppleStore(
         name: "Apple Union Square",
-        website: URL(string: "https://www.apple.com/retail/unionsquare/"),
+        website: URL(string: "https://www.apple.com/retail/unionsquare/")!,
         phone: "(415) 486 4800",
         location: CLLocation(latitude: 37.7887, longitude: -122.4072),
         hours: [

@@ -11,7 +11,7 @@ import Combine
 
 enum DataLoader {
     static func loadAppleStores() -> AnyPublisher<[AppleStore], Error> {
-        URLSession.shared.dataTaskPublisher(for: URL(string: "https://timroesner.com/applestores.json")!)
+        URLSession.shared.dataTaskPublisher(for: URL(string: "https://timroesner.com/workshops/applestores.json")!)
             .receive(on: RunLoop.main)
             .map({ $0.data })
             .decode(type: Root.self, decoder: JSONDecoder())
