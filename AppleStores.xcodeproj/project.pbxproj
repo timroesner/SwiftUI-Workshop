@@ -14,6 +14,8 @@
 		225EABFD24C2B25000F02452 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225EABFC24C2B25000F02452 /* Preview Assets.xcassets */; };
 		225EAC0024C2B25000F02452 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225EABFE24C2B25000F02452 /* LaunchScreen.storyboard */; };
 		225EAC0824C2B26300F02452 /* AppleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225EAC0724C2B26300F02452 /* AppleStore.swift */; };
+		225EAC0A24C2B2CC00F02452 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225EAC0924C2B2CC00F02452 /* DataManager.swift */; };
+		225EAC0C24C2B2D300F02452 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225EAC0B24C2B2D300F02452 /* DataLoader.swift */; };
 		225EAC1124C2B31A00F02452 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225EAC1024C2B31A00F02452 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		225EABFF24C2B25000F02452 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		225EAC0124C2B25000F02452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		225EAC0724C2B26300F02452 /* AppleStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleStore.swift; sourceTree = "<group>"; };
+		225EAC0924C2B2CC00F02452 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		225EAC0B24C2B2D300F02452 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		225EAC1024C2B31A00F02452 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +68,7 @@
 				225EABF524C2B24D00F02452 /* SceneDelegate.swift */,
 				225EAC0F24C2B2F500F02452 /* Views */,
 				225EAC0E24C2B2E900F02452 /* Model */,
+				225EAC0D24C2B2DD00F02452 /* Data */,
 				225EABF924C2B25000F02452 /* Assets.xcassets */,
 				225EABFE24C2B25000F02452 /* LaunchScreen.storyboard */,
 				225EAC0124C2B25000F02452 /* Info.plist */,
@@ -78,6 +83,15 @@
 				225EABFC24C2B25000F02452 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		225EAC0D24C2B2DD00F02452 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				225EAC0924C2B2CC00F02452 /* DataManager.swift */,
+				225EAC0B24C2B2D300F02452 /* DataLoader.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		225EAC0E24C2B2E900F02452 /* Model */ = {
@@ -168,6 +182,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				225EABF424C2B24D00F02452 /* AppDelegate.swift in Sources */,
+				225EAC0A24C2B2CC00F02452 /* DataManager.swift in Sources */,
+				225EAC0C24C2B2D300F02452 /* DataLoader.swift in Sources */,
 				225EAC1124C2B31A00F02452 /* DetailView.swift in Sources */,
 				225EABF624C2B24D00F02452 /* SceneDelegate.swift in Sources */,
 				225EAC0824C2B26300F02452 /* AppleStore.swift in Sources */,
