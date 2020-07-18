@@ -17,7 +17,7 @@ struct AppleStore: Identifiable {
     let hours: [Hour]
 }
 
-struct Hour: Codable {
+struct Hour: Codable, Hashable {
     let day: String
     let time: String
 }

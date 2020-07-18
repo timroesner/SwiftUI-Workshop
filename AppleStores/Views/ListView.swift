@@ -13,7 +13,9 @@ struct ListView: View {
     var body: some View {
         NavigationView {
             List(dataManager.appleStores) { store in
-                Text(store.name)
+                NavigationLink(destination: DetailView(appleStore: store), label: {
+                    Text(store.name)
+                })
             }
             .navigationTitle("Stores")
         }
