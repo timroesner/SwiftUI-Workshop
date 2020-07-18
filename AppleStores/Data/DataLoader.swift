@@ -31,7 +31,7 @@ private struct Root: Decodable {
         appleStores = data.map { element in
             AppleStore(
                 name: element.name,
-                website: URL(string: element.website),
+                website: element.website,
                 phone: element.phone,
                 location: CLLocation(latitude: element.location.latitude, longitude: element.location.longitude),
                 hours: element.hours
@@ -42,7 +42,7 @@ private struct Root: Decodable {
 
 private struct StoreData: Codable {
     let name: String
-    let website: String
+    let website: URL
     let phone: String
     let location: Location
     let hours: [Hour]
