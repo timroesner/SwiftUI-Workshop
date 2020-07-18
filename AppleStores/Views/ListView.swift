@@ -13,14 +13,33 @@ struct ListView: View {
     var body: some View {
         NavigationView {
             List(dataManager.appleStores) { store in
-                NavigationLink(destination: DetailView(appleStore: store), label: {
-                    Text(store.name)
-                })
+                StoreCell(appleStore: store)
             }
             .navigationTitle("Stores")
         }.onAppear {
             dataManager.load()
         }
+    }
+}
+
+struct StoreCell: View {
+    let appleStore: AppleStore
+    
+    var body: some View {
+        NavigationLink(destination: DetailView(appleStore: appleStore), label: {
+            VStack(alignment: .leading) {
+                Spacer()
+                Text(appleStore.name)
+                    .font(.headline)
+                    .padding(.bottom, 4)
+                if let firstHour = appleStore.hours.first {
+                    Text(firstHour.time)
+                        .foregroundColor(.secondary)
+                        .font(.subheadline)
+                }
+                Spacer()
+            }
+        })
     }
 }
 

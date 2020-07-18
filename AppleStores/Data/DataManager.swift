@@ -15,6 +15,10 @@ class DataManager: ObservableObject {
     
     private var token: Cancellable?
     
+    init() {
+        appleStores.append(Self.testStore)
+    }
+    
     func load() {
         token?.cancel()
         
