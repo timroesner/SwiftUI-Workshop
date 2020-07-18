@@ -8,7 +8,8 @@
 import Foundation
 import CoreLocation
 
-struct AppleStore {
+struct AppleStore: Identifiable {
+    let id = UUID()
     let name: String
     let website: URL?
     let phone: String

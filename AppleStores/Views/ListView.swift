@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct ListView: View {
+    @StateObject var dataManager = DataManager()
+    
     var body: some View {
-        Text("Hello, world!").padding()
+        NavigationView {
+            List(dataManager.appleStores) { store in
+                Text(store.name)
+            }
+            .navigationTitle("Stores")
+        }
     }
 }
 
