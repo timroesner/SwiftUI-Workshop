@@ -14,6 +14,7 @@
 		225EABFD24C2B25000F02452 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225EABFC24C2B25000F02452 /* Preview Assets.xcassets */; };
 		225EAC0024C2B25000F02452 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225EABFE24C2B25000F02452 /* LaunchScreen.storyboard */; };
 		225EAC0824C2B26300F02452 /* AppleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225EAC0724C2B26300F02452 /* AppleStore.swift */; };
+		225EAC1124C2B31A00F02452 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225EAC1024C2B31A00F02452 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		225EABFF24C2B25000F02452 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		225EAC0124C2B25000F02452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		225EAC0724C2B26300F02452 /* AppleStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleStore.swift; sourceTree = "<group>"; };
+		225EAC1024C2B31A00F02452 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				225EABF724C2B24D00F02452 /* ListView.swift */,
+				225EAC1024C2B31A00F02452 /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				225EABF424C2B24D00F02452 /* AppDelegate.swift in Sources */,
+				225EAC1124C2B31A00F02452 /* DetailView.swift in Sources */,
 				225EABF624C2B24D00F02452 /* SceneDelegate.swift in Sources */,
 				225EAC0824C2B26300F02452 /* AppleStore.swift in Sources */,
 				225EABF824C2B24D00F02452 /* ListView.swift in Sources */,
